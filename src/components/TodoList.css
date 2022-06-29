@@ -1,0 +1,119 @@
+.container{
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container img{
+    width: 100px;
+}
+figure{
+    display: flex;
+}
+.box{
+    width: 10px;
+    height: 42px;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    outline: none;    
+    border: none;
+    font-size: 16px;
+}
+.i{
+    width: 30px;
+    height: 31px;
+    background-color: white;
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
+    padding-top: 11.5px;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+}
+.i:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    background: #e9e8e8;
+    text-decoration: none;
+    width: 160px;
+    height: 38px;
+    margin: 24px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.btn.btn2::after,
+.btn.btn2::before {
+    content: "Check All";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    line-height: 2.5;
+
+    transition: all 400ms;
+    top: 0;
+}
+.btn.btn.btn2:hover::after {
+    top: -36px;
+}
+
+.btn.btn2::before {
+    content: "Delete All";
+    top: 150px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.btn.btn.btn2:hover::before {
+    top: -1px;
+}
+
+.list{
+    width: 344px;
+    height: 40px;
+    background-color: rgb(100, 99, 99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+.listName{
+    height: 40px;
+    background-color: rgb(100, 99, 99);
+    border-radius: 5px 0 0 5px;
+    line-height: 36px;
+    margin-left: 10px;
+    
+    
+}
+.icons{
+    background-color:  rgb(100, 99, 99);
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.icons i{
+    margin: 6px;
+    cursor: pointer;
+}
+.icons i:hover{
+    color: aquamarine;
+}
